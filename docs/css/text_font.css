@@ -1,0 +1,146 @@
+/* 
+Oye Themes Text Utility. 
+developed by Webfort Techologies(thewebfort.com) for oyethemes.com
+All rights reserved. 
+*/
+.text-font{
+    font-size:0.625rem;
+}
+.text-font-1{
+    font-size:0.6875rem;
+}
+.text-font-2{
+    font-size:0.75rem;
+}
+/*difference 1px*/
+.text-font-3{
+    font-size:0.875rem;
+}
+.text-font-4{
+    font-size:1rem;
+}
+.text-font-5{
+    font-size:1.125rem;
+}
+.text-font-6{
+    font-size:1.25rem;
+}
+.text-font-7{
+    font-size:1.375rem;
+}
+.text-font-8{
+    font-size:1.5rem;
+}
+/*difference 2px*/
+.text-font-9{
+    font-size:1.6875rem;
+}
+.text-font-10{
+    font-size:1.875rem;
+}
+.text-font-11{
+    font-size:2.0625rem;
+}
+.text-font-12{
+    font-size:2.25rem;
+}
+.text-font-13{
+    font-size:2.4375rem;
+}
+.text-font-14{
+    font-size:2.625rem;
+}
+.text-font-15{
+    font-size:2.8125rem;
+}
+.text-font-16{
+    font-size:3rem;
+}
+.text-font-17{
+    font-size:3.1875rem;
+}
+/*difference 3px*/
+.text-font-18{
+    font-size:3.4375rem;
+}
+.text-font-19{
+    font-size:3.6875rem;
+}
+/*difference 4px*/
+.text-font-20{
+    font-size:4rem;
+}
+/*difference 5px*/
+
+
+
+/* Css for letter-spacing*/
+
+/* difference .5px */
+
+.letter-spacing-1{
+    letter-spacing: 1px;
+}
+.letter-spacing-2{
+    letter-spacing: 1.5px;
+}
+.letter-spacing-3{
+    letter-spacing: 2px;
+}
+.letter-spacing-4{
+    letter-spacing: 2.5px;
+}
+.letter-spacing-5{
+    letter-spacing: 3px;
+}
+.letter-spacing-6{
+    letter-spacing: 3.5px;
+}
+.letter-spacing-7{
+    letter-spacing: 4px;
+}
+.letter-spacing-8{
+    letter-spacing: 4.5px;
+}
+.letter-spacing-9{
+    letter-spacing: 5px;
+}
+/*difference 1px*/
+.letter-spacing-10{
+    letter-spacing: 6px;
+}
+.letter-spacing-11{
+    letter-spacing: 7px;
+}
+.letter-spacing-12{
+    letter-spacing: 8px;
+}
+.letter-spacing-13{
+    letter-spacing: 9px;
+}
+.letter-spacing-14{
+    letter-spacing:10px;
+}
+/* difference 2px*/
+.letter-spacing-15{
+    letter-spacing:12px;
+}
+.letter-spacing-16{
+    letter-spacing:14px;
+}
+.letter-spacing-17{
+    letter-spacing:16px;
+}
+/* difference 3px */
+.letter-spacing-18{
+    letter-spacing:19px;
+}
+.letter-spacing-19{
+    letter-spacing:22px;
+}
+.letter-spacing-20{
+    letter-spacing:25px;
+}
+
+
+

@@ -7,23 +7,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/text_font.css">
+    <link rel="stylesheet" href="css/tp_button_styles.css">
+    <link rel="stylesheet" href="css/animation_utility.css">
+             
+                 
+                       
+       
+       
 
-    <title>Hello, world!</title>
+    <title>CSS Animation on Scroll</title>
+    <style>
+        #article-list2 .list2 ol{
+        counter-reset: my-sec-counter;
+        }
+        #article-list2 .list2 ol li{
+            list-style: none;
+            
+        }
+        #article-list2 .list2 ol li:before {
+        position: absolute;
+        left: 0px;
+        counter-increment: my-sec-counter;
+        content: counter(my-sec-counter);
+        text-align: center;
+        margin: 3px 5px;
+        color: #ffffff;
+        background: #149dcc;
+        border-radius: 50%;
+        padding-top: 7px;
+        width: 40px;
+        height: 40px;
+        }
+    </style>
+                
   </head>
   <body>
     <h1></h1>
-         <section class="p-5 ">
-            <div class="row">
-                      <div class="">
-                <div class='py-3'><h1>Animation on Scroll</h1><div><br></div><h3>ABOUT.&nbsp;</h3><div>If you want animation attached to your elements like SlideLeft, Slide Right, FlipLeft, FlipRight.&nbsp;<br>When users scroll down the page and the element is visible.&nbsp;<br>This library is free and opensource. Use in your project as you like.&nbsp;</div><div><br>Animation on Scroll uses animation.css as a dependency.&nbsp;</div><div><br></div><div> <a href="demo.html"> To See a Demo Click here.&nbsp;</a></div></div>              </div>
+
+
+<section id="intro-video" class="py-4 py-sm-4 py-md-5 bg-light intro p-4 d-flex align-items-center" style="min-height: 80vh;">
+       <div class="container">
+           <div class="row">
+               <div class="col-xl-7 col-lg-7 col-md-12 text-center text-sm-center text-md-right text-justify">
+                    <div class="text-font-18 font-weight-bold">
+                       CSS Animation on Scroll
+                    </div>
+                    <p class="para text-font-8">
+                      Animate elements as the user scrolls down and the section is visible. 
+                      This is a easy to apply libary with minimum setup. 
+                      </p>
+                      <p>Library is Free and Open Source. </p>  
+                      <a href="#how_to_use" class="wb-btn btn btn-primary tp-btn-pill text-font-4 px-4 py-2 btn-lg mt-3 mr-3">
+                        HOW TO USE
+                      </a>
+                    <a href="demo.html" class="wb-btn btn btn-outline-dark tp-btn-pill text-font-4 px-4 py-2 btn-lg mt-3 mr-3">
+                        LIVE DEMO
+                    </a>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-12 p-4">
+                   
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/tj16L-7naHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+                </div>
+           </div>
+       </div>
+   </section>
               
-      </div>     </section>
-          <section class="p-5 ">
+<section id="how_to_use" class="py-4 py-sm-4 py-md-5 mx-4 mx-sm-0 mx-md-0">
+       <div class="container">
             <div class="row">
-                      <div class="">
-                <div class='py-3'><h2>How to use the Library.&nbsp;</h2><div><br></div><div><h3>STEP 1</h3>Include animate.css in your application. You can use the CDN links from CDN JS or you can also download and use from its website.&nbsp;<br><br>CDN&nbsp;<br>https://cdnjs.com/libraries/animate.css/<br><br>OFFICIAL WEBSITE (Download animate.css from here)<br>https://daneden.github.io/animate.css/</div><div><br><h3>STEP 2&nbsp;</h3></div><div>Download the animate_scroll plugin, into your project and include it in your page.&nbsp;</div><div><br></div><h3>STEP 3.&nbsp;</h3><div>On the element, you want to apply animation add the following classes.&nbsp;</div><div>class="animated bounce scroll_animation"<br><br>Note: You can replace the animation "bounce" with any animation that you want.&nbsp;<br>To check out the animations you can use check out this page.&nbsp;<br>https://daneden.github.io/animate.css/<br><br></div><div><br></div><div><br></div><div><br></div><div><br><br></div><div><br></div></div>              </div>
+                <div class="col-md-12">
+                  <div class="text-font-15 font-weight-bold pb-4">
+                       How to Use
+                    </div>
+
+                    <div class="list2">
+                        <ol>
+                            <li class="pb-3 pb-md-2">
+                               <h3>Add animate.css in your application.</h3>
+
+                             <br>CDN&nbsp;<br>
+                              <p>Add the following on your page. </p>
+                              <code>
+                                &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css&quot; /&gt;
+                              </code>
+                                https://cdnjs.com/libraries/animate.css/
+                                <br>
+                                <br>
+                                <p>Or alternatively you can download the library and link on your project. </p>
+                                OFFICIAL WEBSITE (Download animate.css from here)<br>https://daneden.github.io/animate.css/
+                                <br>
+                                <br>
+                            </li>
+                          <li class="pb-3 pb-md-2">
+                               <h3>Add OyeThemes Scroll Animation JS PLugin</h3>
+                              <p>Download Library to your JS Folder.</p>
+                                <a href="https://github.com/shishirraven/animate-on-scroll/blob/master/oyethemes_onscroll_animation.js">https://github.com/shishirraven/animate-on-scroll/blob/master/oyethemes_onscroll_animation.js</a>
+                               <p>Include in your project as follows</p>
+                               <code>
+                                &lt;script src=&quot;path-to-your-js/oyethemes_onscroll_animation.js&quot;&gt;&lt;/script&gt;
+                              </code>
+                            </li>
+                          <li class="pb-3 pb-md-2">
+                               <h3>Add Animation to Element. </h3>
+                              <p>On the Selected element add the following classes.</p>
+
+                              <div>a. animated</div>
+                              <div>b. scrollanimation</div>
+                              <div>c. Animation your choose from animate.css for example. "bounce", "flip"...</div>
+                              <br>
+                              <p>Once you apply all these the element should look like. </p>
+                              <code>&lt;div class=&quot;animated scrollanimation bounce&quot;&gt;...&lt;/div&gt;</code>
+                               
+                            </li>   
+
+                            <li class="pb-3 pb-md-2">
+                               <h3>Done </h3>
+                     
+                            </li>
+
+
+
+                        
+                        </ol>
+                    </div>
+                </div>
+            </div>
+       </div>
+   </section><!--article-list2 section end-->
               
-      </div>     </section>
+
+<section id="footer" class="py-4 py-sm-4 py-md-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12">
+                    <div class="logo pb-4 pb-sm-4 pb-md-4">
+                        <img src="images/webfort_logo.png" class="img-fluid">
+                    </div>
+                    <div class="detail">
+                        <p class="mb-0 pb-2">G-9, 3rd Floor, Pushkar Enclave, <br>Outer Ring Road, Paschim Vihar, New Delhi, India, 110063</p>
+                        <span class="border-right border-dark pr-3">info@thewebfort.com</span>
+                        <span class="pl-3">+91 971 678 3075</span><br>
+                        <span class="">+91 9811719263</span>
+                    </div>
+                    <div class="btn-group social-links py-4">
+                        <a href="" class=" text-dark mr-3"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="" class=" text-dark mr-3"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="" class=" text-dark mr-3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="" class=" text-dark mr-3"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-12">
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="pb-4 mb-0">Partner Sites</h5>
+                            <ul class="list-unstyled">
+                                <li class="py-1"><a href="http://www.thewebfort.com">thewebfort.com</a></li>
+                                <li class="py-1"><a href="http://www.oyethemes.com">oyethemes.com</a></li>
+                                <li class="py-1"><a href="http://www.http://data-entry-in-india.com/">data-entry-in-india.com</a></li>       
+                                <li class="py-1"><a href="http://bulkphonelookup.com/">bulkphonelookup.com</a></li>  
+                                <li class="py-1"><a href="http://iamshishir.com/">iamshishir.com</a></li>  
+                      
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-12">
+                    <h5 class="pb-4 mb-0">About Developer</h5>
+                    <p>This is a free library originally designed for oyethemes.com by <a href="http://www.iamshishir.com">Shsihir Raven</a> </p>
+                    <p>If you wish to hire the developer contact him on his skype id shishir.raven or email him at
+                      <a href="mailto:shishir.raven@gmail.com">shishir.raven@gmail.com</a></p> 
+
+                       <h5 class="pb-4 mb-0">Credits</h5>
+                    <p>This library uses excellent <a href="https://daneden.github.io/animate.css/">animate.css library by Daniel Eden.</a> </a> </p>
+                    <p>If you wish to hire the developer contact him on his skype id shishir.raven or email him at
+                      <a href="mailto:shishir.raven@gmail.com">shishir.raven@gmail.com</a></p>
+                    
+                </div>
+            </div>
+        </div>  
+    </section>
+              
+          
+          
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
