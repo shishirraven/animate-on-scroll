@@ -4,27 +4,45 @@ Website. : iamshishir.com
 Developed for : oyethemes.com
 */
 
+
 (function($) {
-  $.fn.visible = function(partial) {
+  $.fn.notvisible = function() {
     
       var $t            = $(this),
           $w            = $(window),
           viewTop       = $w.scrollTop(),
           viewBottom    = viewTop + $w.height(),
           _top          = $t.offset().top,
-          _bottom       = _top + $t.height(),
-          compareTop    = partial === true ? _bottom : _top,
-          compareBottom = partial === true ? _top : _bottom;
-    
-    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
+          _bottom       = _top + $t.height();
+          
+  return (((_top<viewTop || _top>viewBottom) &&  (_bottom<viewTop || _bottom>viewBottom)))
   };
 })(jQuery);
+
+
+
+(function($) {
+  $.fn.visible = function() {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom      = _top + $t.height();
+          
+  return (((_top>viewTop && _top<viewBottom) ||  (_bottom>viewTop && _bottom<viewBottom)))
+  };
+})(jQuery);
+
+
+
 
 
 $(window).scroll(function(event) {
   
   $(".scrollanimation").each(function(i, el) {
+   var rawel = el;
     var el = $(el);
 
     /* find out the animation which is in place. */
@@ -334,16 +352,27 @@ if(el.hasClass("scroll-rollOut") || el.hasClass("rollOut"))
 {
     el_animation = "rollOut";
 }
-
-    if (el.visible(true)) {
-        el.removeClass("scroll-"+el_animation)
-        el.addClass(el_animation);
+if (el.visible(true)) {
+        if(el.hasClass("scroll-"+el_animation))
+        {
+          el.removeClass("scroll-"+el_animation)
+          el.addClass(el_animation);
+        }
     } 
-    else
+    if (el.notvisible()) 
     {
-        el.removeClass(el_animation)
-        el.addClass("scroll-"+el_animation);
+        if(el.hasClass(el_animation))
+        {
+          el.removeClass(el_animation)
+          el.addClass("scroll-"+el_animation);
+        }
     }
+
+
+
+
+
+    
   });
   
 });
