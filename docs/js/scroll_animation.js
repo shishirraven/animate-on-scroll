@@ -344,8 +344,11 @@ if(el.hasClass("scroll-rollOut") || el.hasClass("rollOut"))
     } 
     else
     {
-        el.removeClass(el_animation)
-        el.addClass("scroll-"+el_animation);
+        if(el.hasClass(el_animation))
+        {
+          el.removeClass(el_animation)
+          el.addClass("scroll-"+el_animation);
+        }
     }
   });
   
