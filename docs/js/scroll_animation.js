@@ -335,7 +335,7 @@ if(el.hasClass("scroll-rollOut") || el.hasClass("rollOut"))
     el_animation = "rollOut";
 }
 
-    if (el.visible(true)) {
+    if (el.visible()) {
         if(el.hasClass("scroll-"+el_animation))
         {
           el.removeClass("scroll-"+el_animation)
