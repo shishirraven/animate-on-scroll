@@ -336,8 +336,11 @@ if(el.hasClass("scroll-rollOut") || el.hasClass("rollOut"))
 }
 
     if (el.visible(true)) {
-        el.removeClass("scroll-"+el_animation)
-        el.addClass(el_animation);
+        if(el.hasClass("scroll-"+el_animation))
+        {
+          el.removeClass("scroll-"+el_animation)
+          el.addClass(el_animation);
+        }
     } 
     else
     {
