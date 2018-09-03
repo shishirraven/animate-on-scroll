@@ -1,2 +1,6 @@
-# animate-on-scroll
-If you want animation attached to your elements like SlideLeft, Slide Right, FlipLeft, FlipRight ( or any animation found on animaite.css).  You can use this small library
+# CSS Trigger Animation on Scroll
+
+This is a small library that helps trigger CSS animation when user scrolls down and the elements are visible. 
+For Demo and Documentation Visit 
+
+(https://shishirraven.github.io/animate-on-scroll/)[https://shishirraven.github.io/animate-on-scroll/]
