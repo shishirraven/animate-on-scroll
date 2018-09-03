@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125103515-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125103515-1');
+</script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -270,11 +280,11 @@
                 <div class="col-md-12 py-4 text-center">
                     <p>Add the following CSS classes to the element you want to animate on scroll</p>
                     
-                     <pre><Prism language="html">scrollanimation animated {{animationClass}} {{animationDuration}} {{animationDelay}}</Prism></pre>
+                     <pre><code class="language-html">scrollanimation animated {{animationClass}} {{animationDuration}} {{animationDelay}}</code></pre>
 
 
 
-                     <pre><Prism class="language-html">&lt;div class=&quot; scrollanimation animated {{animationClass}} {{animationDuration}} {{animationDelay}}&#x22;&#x3E;&#x3C;/div&#x3E;</Prism></pre>
+                     <pre><code class="language-html">&lt;div class=&quot; scrollanimation animated {{animationClass}} {{animationDuration}} {{animationDelay}}&#x22;&#x3E;&#x3C;/div&#x3E;</code></pre>
                     
                 </div>
             </div>
@@ -296,19 +306,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script type="text/javascript" src="js/oyethemes_onscroll_animation.js"></script>    
     <script type="text/javascript" src="assets/prism/prism.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue-prism-component@1.0.1/dist/vue-prism-component.common.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/vue-prism-component@1.0.1/dist/vue-prism-component.min.js"></script>
 
     <script>
 
-Vue.component('button-counter', {
-  data: function () {
-    return {
-      count: 0
-    }
-  },
-  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
-})
 
 
         var app = new Vue({
