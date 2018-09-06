@@ -2,6 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <title>Animate on Scroll</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125103515-1"></script>
 <script>
@@ -11,6 +12,15 @@
 
   gtag('config', 'UA-125103515-1');
 </script>
+
+
+ <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="https://shishirraven.github.io/animate-on-scroll/demo.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Animate on Scroll Library" />
+  <meta property="og:description"   content="https://shishirraven.github.io/animate-on-scroll/" />
+  <meta property="og:image"         content="https://shishirraven.github.io/animate-on-scroll/images/titleimage.png" />
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -37,7 +47,6 @@
        
        
 
-    <title>CSS Animate on Scroll</title>
     <style>
 
      section{
@@ -94,7 +103,16 @@
                 
   </head>
   <body>
-    <h1></h1>
+
+    <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
 
 <section id="intro-video" class="top-section py-4 py-sm-4 py-md-5 bg-light intro p-4 d-flex align-items-center" style="">
@@ -102,7 +120,7 @@
            <div class="row">
                <div class="col-xl-7 col-lg-7 col-md-12 text-center text-sm-center text-md-right text-justify">
                     <div class="text-font-18 font-weight-bold">
-                       CSS Animate on Scroll
+                        Animate on Scroll
                     </div>
                     <h1 class="para text-font-8">
                       Small library to Animate elements as the user scrolls down and the section is visible. 
@@ -371,7 +389,7 @@
 
 
 
-  <div class="btn btn-primary " @click="play_animation()">Play Animation</div>
+  <div class="btn btn-danger tp-btn-pill " @click="play_animation()">Preview Animation</div>
 </form>
                     
                 </div>
@@ -402,12 +420,14 @@
       <div class="container py-4">
         <div class="row">
               <div class="col-md-12">
-                <p>Apply these classes to the element to which you want to add animation</p>
+                <p class="h4">Apply these classes to the element to which you want to add animation</p>
                 <div class=" p-3 d-inline-block border border-danger">scrollanimation animated {{animationClass}} {{animationDuration}} {{animationDelay}}</div>
                 <br>
                 <br>
+                Your element should look like<div class="text-danger p-2 my-3 border border-danger">  &#x3C;div class=&#x22;scrollanimation animated  {{animationClass}} {{animationDuration}} {{animationDelay}} &#x22;&#x3E; ...  &#x3C;/div&#x3E; </div>
+                <br>
                 <p>Repeat this step for different elements on the page. </p>
-                <p>😊 That's it! You've got a CSS animated element on Scroll. Super!</p>
+                <p> That's it! You've got a CSS animated element on Scroll. Super!</p>
               </div>
             </div>
       </div>
@@ -417,6 +437,25 @@
 
     
 </div>
+
+<section class="lightyellow-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col py-5 text-center">
+
+          <h1>To show your support and love share us on facebook. </h1>
+           <!-- Your share button code -->
+  <div class="fb-share-button" 
+   data-size="large"
+    data-href="https://shishirraven.github.io/animate-on-scroll/" 
+    data-layout="button_count">
+  </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
 <section id="footer" class="py-4 py-sm-4 py-md-5 bg-light">
         <div class="container">
             <div class="row">
@@ -455,7 +494,13 @@
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-12">
                     <h5 class="pb-4 mb-0">About Developer</h5>
-                    <p>This is a free library originally designed for oyethemes.com by <a href="http://www.iamshishir.com">Shishir Raven</a> </p>
+                      <img src="https://secure.gravatar.com/avatar/a51174bfeb1e55824aca633a0c0df187">
+                    <p>Developed by 
+                      
+                     <a href="http://www.iamshishir.com">Shishir Raven</a> 
+                     free library originally designed for <a href="http://oyethemes.com/"> oyethemes.com.</a> 
+                    Its built to support scroll triggers for animate.css library by Daniel Eden.
+                   </p>
                     <p>If you wish to hire the developer contact him on his skype id shishir.raven or email him at
                       <a href="mailto:shishir.raven@gmail.com">shishir.raven@gmail.com</a></p> 
 
@@ -466,6 +511,9 @@
             </div>
         </div>  
     </section>
+
+
+
               
           
           
