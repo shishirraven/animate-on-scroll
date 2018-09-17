@@ -33,6 +33,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/text_font.css">
         <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
@@ -40,7 +41,6 @@
     <link rel="stylesheet" href="css/tp_button_styles.css">
     <link rel="stylesheet" href="css/animation_utility.css">
     <link href="assets/prism/prism.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
 
                  
                        
@@ -99,6 +99,12 @@
    }
 }
 
+#intro-video{
+ background-image: url(images/animate_on_scroll_background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
     </style>
                 
   </head>
@@ -122,32 +128,32 @@
                     <div class="text-font-18 font-weight-bold">
                         Animate on Scroll
                     </div>
-                    <h1 class="para text-font-8">
+                    <h1 class="para text-font-8 scrollanimation animated fadeIn adl-2 ">
                       Small library to Animate elements as the user scrolls down and the section is visible. 
                       Lightweight and easy to apply. 
                       </h1>
-                      <p>Library is Free and Open Source. </p>  
+                      <p class="scrollanimation animated fadeIn adl-3">Library is Free and Open Source. </p>  
                     
 
-                    <a href="demo.html" class="wb-btn btn btn-outline-dark tp-btn-pill text-font-4 px-4 py-2 btn-lg mt-3 mr-3">
+                    <a href="demo.html" class="scrollanimation animated flipInX adl-1 wb-btn btn btn-outline-dark tp-btn-pill text-font-4 px-4 py-2 btn-lg mt-3 mr-3">
                         LIVE DEMO
                     </a>
-                    <a href="animate_on_scroll_demo_with_all_animations.html" class="wb-btn btn btn-outline-dark tp-btn-pill text-font-4 px-4 py-2 btn-lg mt-3 mr-3">
+                    <a href="animate_on_scroll_demo_with_all_animations.html" class="scrollanimation animated flipInX adl-3 wb-btn btn btn-outline-dark tp-btn-pill text-font-4 px-4 py-2 btn-lg mt-3 mr-3">
                         ALL ANIMATION DEMO
                     </a>
 
-                      <a href="#how_to_use" class="wb-btn btn btn-primary tp-btn-pill text-font-4 px-4 py-2 btn-lg mt-3 mr-3">
+                      <a href="#how_to_use" class="scrollanimation animated flipInX adl-5 wb-btn btn btn-primary tp-btn-pill text-font-4 px-4 py-2 btn-lg mt-3 mr-3">
                         HOW TO USE
                       </a>
                     
                     
                 </div>
-                <div class="col-xl-5 col-lg-5 col-md-12 p-4">
+                <div class="col-xl-5 col-lg-5 col-md-12 p-4 scrollanimation animated slideInRight adl-9">
                    
-                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tj16L-7naHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tj16L-7naHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> 
 
 
-                </div>
+                
            </div>
        </div>
    </section>
@@ -402,7 +408,7 @@
         <div class="container">
             <!--row end-->
             <div class="row  justify-content-center">
-                <div class="col-4">
+                <div class="col-6 col-md-4">
                     <div v-bind:class="[animationClass,animationDuration,animationDelay]" class="  animated lightyellow-bg  rounded-0 z-depth-4 scrollanimation card p-2 p-sm-4 p-md-2  ">
                         <div class="card-body pinkorange-text-color ">
                             <h5 class="card-title text-center" style="font-size:10rem;font-family: 'Monoton', cursive;">S</h5>
@@ -479,6 +485,10 @@
                 <div class="col-xl-3 col-lg-3 col-md-12">
                     <div class="row">
                         <div class="col">
+                            <h5 class="pb-4 mb-0">Tutorials </h5>
+                            <ul class="list-unstyled">
+                              <li><a href="https://medium.com/@shishir.raven/get-animated-on-scroll-in-just-3-minutes-on-any-webpage-6c95668befa1">Easily add animations on Scroll to any webpage in 5 minutes.</a></li>
+                            </ul>
                             <h5 class="pb-4 mb-0">Partner Sites</h5>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="http://www.thewebfort.com">thewebfort.com</a></li>
